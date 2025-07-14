@@ -14,14 +14,11 @@ const Navbar = () => {
 
   return (
     <div className="absolute top-0 left-0 w-full z-10">
-      <div className="mx-auto w-[90%] flex justify-center items-center py-4 px-4 bg-transparent glassmorphic-nav">
-        {/*** bg-transparent glassmorphic-nav ***/}
+      <div className="mx-auto w-[90%] flex justify-between items-center py-4 px-6 bg-transparent glassmorphic-nav ">
+{/*** bg-transparent glassmorphic-nav ***/}
 
-        <img
-          src={assets.logo}
-          alt="logo"
-          className="h-12 sm:h-16 object-contain mx-auto"
-        />
+        <img src={assets.logo} alt="logo" className="max-h-12 w-auto object-contain" />
+
 
         <ul className="hidden md:flex gap-7 text-white font-semibold">
           <li>
@@ -74,8 +71,7 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col items-center gap-4 mt-5 px-5  text-lg font-medium">
           <li>
-            <a
-              onClick={() => setShowMobileMenu(false)}
+            <a onClick={() => setShowMobileMenu(false)}
               href="#Header"
               className="px-4 py-2 rounded-full inline-block cursor-pointer hover:text-gray-400"
             >
@@ -83,8 +79,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a
-              onClick={() => setShowMobileMenu(false)}
+            <a onClick={() => setShowMobileMenu(false)}
               href="#About"
               className="px-4 py-2 rounded-full inline-block cursor-pointer hover:text-gray-400"
             >
@@ -92,15 +87,14 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a
-              onClick={() => setShowMobileMenu(false)}
+            <a onClick={() => setShowMobileMenu(false)}
               href="#Services"
               className="px-4 py-2 rounded-full inline-block cursor-pointer hover:text-gray-400"
             >
               Services
             </a>
           </li>
-          {/* { <li>
+         {/* { <li>
             <a onClick={() => setShowMobileMenu(false)}
               href="#Testimonials"
               className="px-4 py-2 rounded-full inline-block cursor-pointer hover:text-gray-400"
