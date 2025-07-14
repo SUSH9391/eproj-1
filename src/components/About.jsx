@@ -1,21 +1,24 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="flex flex-col items-center justify-center container mx-auto p-14 md:px-4 lg:px-14 w-full overflow-hidden"
       id="About"
     >
-       
+      <h3 className="text-3xl sm:text-5xl font-bold mb-4 text-center">
+        About <span className="underline decoration-blue-500">Us</span>
+      </h3>
 
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2">
-        About{" "}
-        <span className="underline underline-offset-4 decoration-1 under font-light">
-          Us
-        </span>
-      </h1>
-      <p className="text-gray-500 max-w-80 text-center mb-8">Comfort and Reliability</p>
+      <p className="text-gray-500 max-w-80 text-center mb-8">
+        Comfort and Reliability
+      </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
         <img
           src={assets.brand}
@@ -55,7 +58,7 @@ const About = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

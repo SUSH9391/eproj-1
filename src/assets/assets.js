@@ -1,4 +1,4 @@
-import logo from './react.svg';
+import logo from './logo.png';
 import menu from './menu_icon.svg';
 import cross from './cross_icon.svg';
 import brand from './brand_img.jpg';
@@ -11,6 +11,7 @@ import lightningArrester from './lightning.png';
 import transformer from './transformer.png';
 import electricalInspectorate from './elec_insp.png';
 import bescomPowerSanction from './bescom.png';
+import logo2 from './logo_dark.png';
  
 export const assets = {
   logo: logo,
@@ -25,7 +26,8 @@ export const assets = {
   lightningArrester: lightningArrester,
   transformer: transformer,
   electricalInspectorate: electricalInspectorate,
-  bescomPowerSanction: bescomPowerSanction
+  bescomPowerSanction: bescomPowerSanction,
+  logo2: logo2,
   
 }
 export const services = {

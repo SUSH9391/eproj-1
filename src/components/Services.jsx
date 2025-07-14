@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import {  services } from "../assets/assets";
 import { WrenchIcon } from "@heroicons/react/24/solid"; // or 'outline'
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-
+import { motion } from "motion/react";
 const Services = () => {
   const sliderRef = useRef(null);
   const servicesList = Object.values(services);
@@ -24,13 +24,18 @@ const Services = () => {
   };
 
   return (
-    <div
+    <motion.div
+        initial={{ opacity: 0,x:-200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="container mx-auto py-4 pt-20 lg:px-32 my-20 w-full"
-      id="services"
+      id="Services"
     >
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
-        Our Services
+      <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-center">
+        Our <span className="underline decoration-blue-500">Services</span>
       </h1>
+      
       <p className="text-center text-gray-500 mb-8 max-w-80 mx-auto">
         We offer a variety of services to help you achieve your goals.
       </p>
@@ -87,7 +92,7 @@ const Services = () => {
   ))}
 </div>
 
-    </div>
+    </motion.div>
   );
 };
 

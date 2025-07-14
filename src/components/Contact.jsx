@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Toaster, toast } from "react-hot-toast";
+import { motion } from "motion/react"
 
 const Contact = () => {
   const formRef = useRef();
@@ -32,7 +33,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-50 px-6 py-20 sm:px-12 lg:px-32">
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="bg-white px-6 py-20 sm:px-12 lg:px-32" id="Contact"
+    >
       <Toaster position="top-center" />
       <h1 className="text-3xl sm:text-5xl font-bold mb-4 text-center">
         Request a <span className="underline decoration-blue-500">Quote</span>
@@ -131,7 +138,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 };
 
