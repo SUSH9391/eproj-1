@@ -11,7 +11,7 @@ const Footer = () => {
           <img
             src={assets.logo2}
             alt="logo"
-            className="max-h-20 object-contain mx-auto"
+            className="max-h-20 object-contain mx-auto pr-0"
           />{" "}
           <p className="text-gray-400 mt-5">
             No. 263, 14th cross, 2nd stage, Indiranagar, Bengaluru - 560038
