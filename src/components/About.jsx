@@ -19,20 +19,22 @@ const About = () => {
       <p className="text-gray-500 max-w-80 text-center mb-8">
         Comfort and Reliability
       </p>
-      <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
-        <img
-          src={assets.brand}
-          alt="About Us"
-          className="w-full sm:w-1/2 max-w-lg"
-        />
-        <div className="flex flex-col items-center md:items-start mt-10 text-gray-600">
+      <div className="flex flex-col md:flex-row justify-center items-center md:gap-20">
+
+       <img
+  src={assets.brand}
+  alt="About Us"
+  className="w-full sm:w-1/2 max-w-lg transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"
+/>
+
+        <div className="flex flex-col items-center md:items-start mt-5 text-gray-600">
           <div className="grid grid-cols-2 gap-6 md:gap-10 w-full 2xl:pr-28">
             <div>
-              <p className="text-4xl font-medium text-gray-800">10+</p>
+              <p className="text-4xl font-medium text-gray-800">11+</p>
               <p className="text-sm">Years of Experience</p>
             </div>
             <div>
-              <p className="text-4xl font-medium text-gray-800">12+</p>
+              <p className="text-4xl font-medium text-gray-800">102+</p>
               <p className="text-sm">Projects Completed</p>
             </div>
             <div>
@@ -40,21 +42,21 @@ const About = () => {
               <p className="text-sm">Automation Works Completed</p>
             </div>
             <div>
-              <p className="text-4xl font-medium text-gray-800">5+</p>
+              <p className="text-4xl font-medium text-gray-800">7+</p>
               <p className="text-sm">Ongoing Projects</p>
             </div>
           </div>
           <p className="my-10 max-wdith-lg">
-            At Adithya Electricals, we specialize in blending intelligent
-            automation with dependable electrical solutions to create spaces
-            that are both smart and secure. Whether it’s home automation,
+            We specialize in blending intelligent Electrical wiring systems and Automation wiring system CCTv & Home Theater wiring, HT Transformer Solutions.
+        
+            Whether it’s home automation,
             commercial wiring, or energy-efficient upgrades, our expert team
             ensures seamless integration and long-lasting performance. We don’t
             just power buildings — we power peace of mind, bringing you comfort
             you can control and reliability you can count on.
           </p>
           <button className="bg-blue-600 text-white px-8 py-2 rounded">
-            Contact Us
+            <a href="#Contact">Contact Us</a>
           </button>
         </div>
       </div>

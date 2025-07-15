@@ -1,7 +1,7 @@
 import logo from './logo.png';
 import menu from './menu_icon.svg';
 import cross from './cross_icon.svg';
-import brand from './brand_img.jpg';
+import brand from './brand_img.png';
 import left from './left_arrow.svg';
 import right from './right_arrow.svg';
 import home from './home_automation_wiering.png';
@@ -30,47 +30,47 @@ export const assets = {
   logo2: logo2,
   
 }
-export const services = {
+export const services ={
   home: {
     index: 0,
     image: home,
-    title: "Home Automation Wiring",
+    title:       "Home Automation Wiring",
     description: "Smart home solutions for a connected lifestyle."
   },
   commercial: {
     index: 1,
     image: commercial,
-    title: "Commercial Services",
+    title:       "Commercial Services",
     description: "Tailored camera wiring with high speed networking cable installation."
   },
   industrial: {
     index: 2,
     image: industrial,
-    title: "Industrial Wiring with detailed diagrams",
+    title:       "Industrial Wiring with detailed diagrams",
     description: "Streamlining operations with advanced automation."
   },
   lightning_arrester_installation: {
     index: 3,
     image: lightningArrester,
-    title: "Lightning Arrester Installation",
+    title:       "Lightning Arrester Installation",
     description: "Protecting your property with reliable lightning protection systems."
   },
-  '11kv HT Transformer work': {
+  "11kv HT Transformer work": {
     index: 4,
     image: transformer,
-    title: "11kv HT Transformer work",
+    title:       "11kv HT Transformer work",
     description: "Expertise in high voltage transformer installation and maintenance."
   },
   electrical_inspectorate: {
     index: 5,
     image: electricalInspectorate,
-    title: "Electrical Inspectorate Services",
+    title:       "Electrical Inspectorate Services",
     description: "Ensuring compliance with electrical standards and necessary sanctions."
   },
   bescom_power_sanction: {
     index: 6,
     image: bescomPowerSanction,
-    title: "BESCOM Power Sanction Services",
+    title:       "BESCOM Power Sanction Services",
     description: "Assisting with BESCOM power sanction approvals and documentation."
   }
 };

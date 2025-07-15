@@ -96,7 +96,7 @@ const Contact = () => {
             >
               <option value="">Select a service</option>
               <option value="web-design">Home Automation</option>
-              <option value="development">Commercial Services</option>
+              <option value="development">Commercial Building Electrification</option>
               <option value="marketing">
                 Industrial Wiring with Detailed Diagrams
               </option>
