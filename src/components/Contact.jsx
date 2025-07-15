@@ -61,7 +61,7 @@ const Contact = () => {
               className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-400"
               type="text"
               name="name"
-              placeholder="John Doe"
+              placeholder="your name here"
               required
             />
           </div>
